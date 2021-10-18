@@ -273,9 +273,36 @@ export default function Layout({ children }) {
               ></path>
             </svg>
             <img src="/me.jpg" alt="me" class="avatar" />
-            <a href="#" class="top__nav-link">
-              <span class="avatar-text">Htet Lin Maung</span>
-            </a>
+            <div class="dropdown">
+              <a
+                class="top__nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="avatar-text">Htet Lin Maung</span>
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Action
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Another action
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Something else here
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
       </nav>
